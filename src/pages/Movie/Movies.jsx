@@ -1,4 +1,4 @@
 const Movies = () => {
-  return <section className="w-full h-dvh bg-indigo-950"></section>;
+  return <section className="w-full h-dvh gradientBg"></section>;
 };
 export default Movies;

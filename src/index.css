@@ -1,7 +1,15 @@
 @import 'tailwindcss';
 
+@theme {
+  --color-bg-primary: #000007;
+  --color-bg-secondary: #000017;
+  --color-bg-tertiary: #000215;
+}
 @layer {
   .bgImage {
     @apply bg-[url(/backgroundImage.jpg)] bg-center bg-no-repeat bg-cover;
+  }
+  .gradientBg {
+    @apply bg-radial-[at_50%_80%] from-bg-tertiary via-bg-secondary to-bg-primary;
   }
 }
