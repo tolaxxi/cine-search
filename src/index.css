@@ -1,1 +1,7 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@layer {
+  .bgImage {
+    @apply bg-[url(/backgroundImage.jpg)] bg-center bg-no-repeat bg-cover;
+  }
+}
