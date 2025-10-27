@@ -7,9 +7,9 @@ const Home = () => {
     <main className="flex flex-col gap-8 justify-center items-center bgImage h-dvh w-full">
       {/* hero text and subtitle */}
       <div className="text-center flex items-center gap-1 flex-col">
-        <span className="flex text-indigo-200">
+        <span className="flex justify-center items-center text-nowrap text-4xl sm:text-6xl text-indigo-200">
           <MdOutlineLocalMovies size={65} />
-          <h1 className="text-6xl font-medium">Cine Search</h1>
+          <h1 className=" font-medium">Cine Search</h1>
         </span>
         <p className="text-xl text-indigo-50">Discover your next favorite movie from our vast collection</p>
       </div>
