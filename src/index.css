@@ -12,4 +12,7 @@
   .gradientBg {
     @apply bg-radial-[at_50%_80%] from-bg-tertiary via-bg-secondary to-bg-primary;
   }
+  .btn{
+    @apply bg-gray-900 rounded-md
+  }
 }
