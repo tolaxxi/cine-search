@@ -12,7 +12,9 @@ const SearchBar = () => {
         className="flex-1 outline-none"
         placeholder="Search for movies..."
         value={query}
-        onChange={(e) => setQuery(e.target.value)}
+        onChange={(e) => {
+          setQuery(e.target.value);
+        }}
       />
     </div>
   );

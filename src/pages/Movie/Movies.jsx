@@ -5,11 +5,14 @@ import useFetchMovies from '../../hooks/useFetchMovies.js';
 import { ClipLoader } from 'react-spinners';
 
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
+import { useDebounce } from '../../hooks/useDebounce.js';
 
 const Movies = () => {
   const [page, setPage] = useState(1);
   const { query } = useSearch();
-  const { data, loading, error, totalPages } = useFetchMovies(query, page);
+  const debouncedQuery = useDebounce(query, 1500);
+
+  const { data, loading, error, totalPages } = useFetchMovies(debouncedQuery, page);
 
   function handlePageIncrease() {
     if (page < totalPages) {
